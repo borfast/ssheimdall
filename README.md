@@ -14,9 +14,9 @@ Add to that the fact that I was looking for a little project to have fun with, a
 
 And thus, SSHeimdall is born!
 
-
 # Planned features
 
+* SSHeimdall will have its own master private key which is regenerated periodically.
 * Maintain a list of SSH keys SSHeimdall knows of.
 * Allow adding, removing and creating new SSH keys via a web interface.
 * Manage lists of servers that can be grouped together.
@@ -24,3 +24,7 @@ And thus, SSHeimdall is born!
 * Manage profiles that consist of groups of SSH keys and can be applied to individual servers or groups.
 * Multifactor authentication.
 * Easy to use Docker image.
+* Allow temporary access to servers, where SSHeimdall copies an SSH key to a server only for a specified amount of time (idea shamelessly stolen from [geofront](https://github.com/spoqa/geofront))
+* Configurable location per server for `authorized_keys`.
+* Maintain a list of changes made to each server.
+* Show a side-by-side diff for the changes history of an `authorized_keys` in a server.
